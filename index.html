@@ -1,0 +1,2809 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce Template 10</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="assets/images/others/favicon.png">
+
+    <!-- font awesome 4 css -->
+    <link rel="stylesheet" href="assets/css/all.css">
+
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+
+    <!-- anime css -->
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+
+    <!-- custom theme css -->
+    <link rel="stylesheet" href="assets/css/borhan.css">
+    <link rel="stylesheet" href="assets/css/woomart.css">
+    <link rel="stylesheet" href="assets/css/newDesign.css">
+    <link rel="stylesheet" href="assets/css/responsive.css">
+
+</head>
+<body>
+ 
+    
+<!-- Mobile Menu section -->
+<section>
+    <div class="row">
+        <div class="col-md-12 col-sm-12">
+            <div class="mobile-header-menu-section">
+                <!-- Left Barger menu icon -->
+                <div class="bargerMenu" onclick="OpenMobileMenu()">
+                    <i class="fa fa-bars"></i>  
+                </div>
+
+                <!-- Middle logo -->
+                <div class="mobile-header-logo">
+                    <a href="#"><img src="assets/images/bdbaba.png" class="img-fluid" alt=""></a>
+                </div>
+
+                <!-- Right Menus -->
+                <div class="right-mobile-menu" onclick="MobileCartSidebarToggle()">
+                    <i class="fa fa-shopping-basket"></i>  &nbsp;<span class="badge badge-light">0</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Menu section -->
+
+<!-- Left fixed sidebar -->
+<section>
+    <div class="main-left-fixed-sidebar" id="LeftSidebar">
+        <div class="sidebar-logo-close-icon">
+            <div class="sidebar-logo-header">
+                <img src="assets/images/bdbaba.png" alt="">
+            </div>
+            <div class="cross-icon">
+                <i class="fa fa-times" onclick="SidebarToggle()"></i>
+            </div>
+        </div>
+
+        <!-- Middle section -->
+
+        <!-- Profile picture and content area -->
+        <div class="sidebar-profile-box">
+            <div class="profile-pic">
+                <a href="profile.html"><img src="assets/images/others/happy-girl.jpg" alt=""></a>
+            </div>
+            <div class="sidebar-profile-content">
+                <h2>Md Borhan Uddin</h2>
+                <p>01851590081</p>
+                <p><a href="profile.html">Manage Accounts</a></p>
+            </div>
+        </div>
+
+        <!-- Menus -->
+        <div class="sidebar-middle-menus">
+            <ul>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></li>
+                <li><a href="#">Mobile <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Men <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Women <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Kids <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Toys <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Electronics Devices <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Sports<span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Necklace <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Earrings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Rings <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Anklet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Locket Pen dust <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Fair Sticks <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bracelet <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Bras less <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Nose Pin <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Jewelry Box <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+                <li><a href="#">Stone Jewelry <span><i class="fa fa-caret-right" aria-hidden="true"></i></span></a></a></li>
+            </ul>
+        </div>
+
+        <div class="left-sidebar-footer">
+            <a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a> |<a href="#">About us</a> | <a href="#">Contact us</a> | <a href="#">Terms and conditions</a>
+        </div>
+
+    </div>
+</section>
+<!-- Left fixed sidebar -->
+
+<!-- Right cart sidebar fixed -->
+<section>
+    <div class="main-cart-fixed-sidebar" id="CartSidebar">
+        
+        <!-- My cart and Cross icon -->
+        <div class="cartTopHeader">
+            <i class="fa fa-times" onclick="CartSidebarToggle()"></i>
+            <h5>My Cart</h5>
+        </div>
+
+        <!-- All Products list -->
+        <div class="main-all-product-in-cart">
+
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+            <!-- Single products -->
+            <div class="single-product-cart">
+                <div class="inCart-image">
+                    <img src="assets/images/products/1.jpg" alt="">
+                </div>
+
+                <!-- middle content -->
+                <div class="inCart-middle-content">
+                    <h2>Nylon Regular Backpack - Red and Black</h2>
+                    <p>Price: $350</p>
+                    <p><i class="fa fa-minus" aria-hidden="true"></i> 1 <i class="fa fa-plus" aria-hidden="true"></i></p>
+                </div>
+
+                <!-- delete icon -->
+                <div class="inCart-delete">
+                    <i class="fa fa-trash" aria-hidden="true"></i>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Footer section -->
+        <div class="inCart-footer">
+
+            <!-- Subtotal -->
+            <div class="inCart-subtotal FLEX">
+                <p>Sub Total : </p>
+                <p> ৳ 530</p>
+            </div>
+
+            <!-- Shipping express -->
+            <div class="inCart-shippingAddress FLEX">
+                <p>Shipping (Express) : </p>
+                <p> ৳ 50</p>
+            </div>
+
+            <!-- total  -->
+            <div class="inCart-total FLEX">
+                <p><b>Total Shopping :</b></p>
+                <p><b> ৳ 630</b></p>
+            </div>
+
+            <a href="cart.html"><button class="btn btn-success w-100 my-2 checkoutBtn">Process to checkout</button></a>
+
+        </div>
+
+
+    </div>
+</section>
+<!-- Right cart sidebar fixed -->
+
+
+<!-- Mobile Footer Fixed menu -->
+<section class="mobileFooter-fixed-navbar">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="main-mobile-footer-menu">
+                    <div class="footerMenuItems footerHome">
+                        <a href="index.html"><i class="fa fa-home" aria-hidden="true"></i>  <span>Home</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerChat">
+                        <a href="#"><i class="fa fa-envelope" aria-hidden="true"></i>  <span>Chat</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerCart">
+                        <a href="cart.html"><i class="fa fa-shopping-cart" aria-hidden="true"></i> <span>Cart</span> </a>
+                    </div>
+                    <div class="footerMenuItems footerAccount">
+                        <a href="profile.html"><i class="fa fa-user" aria-hidden="true"></i>  <span>Account</span> </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Mobile Footer Fixed menu -->
+
+
+<main>
+    <!-- Hero wrapper -->
+    <section class="main-hero-section">
+
+         <!-- main menu -->
+         <section class="main-header-menu-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="main-header-wrapper">
+
+                            <div class="d-flex justify-content-center align-items-center">
+
+                                <!-- Logo Area -->
+                                <div class="header-logo-area">
+                                    <img src="assets/images/logo.png" alt="">
+                                </div>
+
+                                <!-- Main menu area -->
+                                <div class="header-main-menu-area">
+                                    <ul>
+                                        <li><a href="#" class="home-menu">Home</a></li>
+                                        <li><a href="#">Products</a></li>
+                                        <li class="hover-mega-menu"> <a href="#">Electronics <span><i class="fa fa-caret-down" aria-hidden="true"></i></span></a>
+                    
+                                            <div class="main-hover-mega-menu-wrapper">
+                        
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Women's Clothing</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Infant & Toddlers Clothing</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                                                <div class="single-hover-menu-columns">
+                                                    <ul>
+                                                        <li><a href="#"><b style="color: var(--brandColor);">Home Heaters</b></a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                        <li><a href="#">Home</a></li>
+                                                    </ul>
+                                                </div>
+                        
+                                            </div>
+                                        </li>
+                                        <li><a href="#">Best Sellers</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Pages</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                    </ul>
+                                </div>
+
+                            </div>
+
+                            <!-- Right area -->
+                            <div class="header-right-icons">
+                                <ul>
+                                    <li class="right-icon-wrapper">
+                                        <a href="#">
+                                            <img src="assets/images/icon/search.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="right-icon-wrapper" onclick="CartSidebarToggle()">
+                                        <a href="#">
+                                            <img src="assets/images/icon/shopping-cart.svg" alt="">
+                                        </a>
+                                    </li>
+                                    <li class="right-icon-wrapper" onclick="SidebarToggle()">
+                                        <a href="#">
+                                            <img src="assets/images/icon/menu (1).svg" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- menu -->
+
+        <div class="swiper-container hero-slider">
+            <div class="swiper-wrapper">
+
+                <!-- item -->
+                <div class="swiper-slide">
+                    <div class="hero-slide-item" style="background-image: url(./assets/images/banner/pink.jpg);">
+                        <div class="hero-slide-content-area">
+                            <h1>Best for womne</h1>
+                            <h2>All the trands you need this sessoions</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quia vel incidunt repudiandae itaque corporis, iusto suscipit quo quod quidem!</p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="swiper-slide">
+                    <div class="hero-slide-item" style="background-image: url(./assets/images/banner/55.webp);">
+                        <div class="hero-slide-content-area">
+                            <h1>Best for womne</h1>
+                            <h2>All the trands you need this sessoions</h2>
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus quia vel incidunt repudiandae itaque corporis, iusto suscipit quo quod quidem!</p>
+                            <button>Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <!-- banner area -->
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="big-banner-wrapper">
+    
+                        <div class="left-big-banner-area">
+                            <img src="assets/images/banner/man.jpg" alt="">
+                            <div class="hover-mask">
+                                <button>GET OFFERS</button>
+                            </div>
+                        </div>
+    
+                        <div class="right-big-banner-area">
+                            <img src="assets/images/banner/man2.jpg" alt="">
+                            <div class="hover-mask-second">
+                                <button>GET OFFERS</button>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- second banner -->
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="big-banner-wrapper second-big-banner-wrapper">
+    
+                        <div class="left-big-banner-area">
+                            <img src="assets/images/banner/g.png" alt="">
+                        </div>
+    
+                        <div class="right-big-banner-area second-banner-wrapper">
+
+                            <!-- item -->
+                            <div class="second-banner-item">
+                                <img src="assets/images/banner/1.png" alt="">
+                            </div>
+                            <!-- item -->
+                            <div class="second-banner-item">
+                                <img src="assets/images/banner/2.jpg" alt="">
+                            </div>
+                            <!-- item -->
+                            <div class="second-banner-item">
+                                <img src="assets/images/banner/3.jpg" alt="">
+                            </div>
+                            <!-- item -->
+                            <div class="second-banner-item">
+                                <img src="assets/images/banner/4.jpg" alt="">
+                            </div>
+
+                        </div>
+    
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shop the look -->
+    <section class="shop-the-look-section">
+        <div class="shop-the-look">
+            <div class="container">
+                <div class="row">
+                    
+                    <div class="col-md-3 col-sm-3">
+                        <div class="transfarent-thumb">
+                            <a href="#">
+                                <img src="assets/images/banner/unnamed.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-3">
+                        <div class="transfarent-thumb">
+                            <a href="#">
+                                <img src="assets/images/banner/transparent.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-3">
+                        <div class="transfarent-thumb">
+                            <a href="#">
+                                <img src="assets/images/banner/TRANS-WOMEN.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3 col-sm-3">
+                        <div class="transfarent-thumb">
+                            <a href="#">
+                                <img src="assets/images/banner/transparent.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- womon fashions -->
+    <section class="big-featured-section">
+        <div class="container">
+            <div class="row no-gutters">
+
+                <!-- left -->
+                <div class="col-md-6">
+                    <div class="left-womon-fashion-wrapper">
+                        
+                        <!-- title -->
+                        <div class="left-womon-fashion-title">
+                            <h2>#FOR <br><span>WOMEN</span></h2>
+                        </div>
+                        
+                        <div class="left-women-big-thumb">
+                            <a href="single.html">
+                                <img src="assets/images/banner/women.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right -->
+                <div class="col-md-6">
+
+                    <!-- navbar -->
+                    <ul class="nav nav-pills mb-3 tabs-ul" id="pills-tab" role="tablist">
+                        <li class="nav-item nav-menu-li">
+                          <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Women Sharee</a>
+                        </li>
+                        <li class="nav-item nav-menu-li">
+                          <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Benti Bag</a>
+                        </li>
+                        <li class="nav-item nav-menu-li">
+                          <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Consmatics</a>
+                        </li>
+                        
+                        <li class="nav-item nav-menu-li">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-beslite" role="tab" aria-controls="pills-beslite" aria-selected="false">Beslite</a>
+                        </li>
+
+                        <li class="nav-item nav-menu-li">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-watch" role="tab" aria-controls="pills-watch" aria-selected="false">Watch</a>
+                        </li>
+
+                        <li class="nav-item nav-menu-li">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-ring" role="tab" aria-controls="pills-ring" aria-selected="false">Ring</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="pills-tabContent">
+
+                        <!-- first tabs -->
+                        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                            <div class="right-womon-item-wrapper">
+
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/japani.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/g.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/5.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/11.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                            </div>
+                        </div>
+
+                        <!-- second tabs -->
+                        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                            <div class="right-womon-item-wrapper">
+
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/japani.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/g.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/5.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/11.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                            </div>
+                        </div>
+
+                        <!-- third tabs -->
+                        <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                            <div class="right-womon-item-wrapper">
+
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/japani.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/g.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/5.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/11.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                            </div>
+                        </div>
+
+                        <!-- fourth tabs -->
+                        <div class="tab-pane fade" id="pills-beslite" role="tabpanel" aria-labelledby="pills-beslite-tab">
+                            <div class="right-womon-item-wrapper">
+
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/japani.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/g.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/5.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/11.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                            </div>
+                        </div>
+                        
+                        <!-- five tabs -->
+                        <div class="tab-pane fade" id="pills-watch" role="tabpanel" aria-labelledby="pills-watch-tab">
+                            <div class="right-womon-item-wrapper">
+
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/japani.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/g.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/5.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/11.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                            </div>
+                        </div>
+
+                        <!-- six tabs -->
+                        <div class="tab-pane fade" id="pills-ring" role="tabpanel" aria-labelledby="pills-ring-tab">
+                            <div class="right-womon-item-wrapper">
+
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/japani.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/g.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/5.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                                <!-- item -->
+                                
+                                    <div class="right-womon-item">
+                                        <a href="#">
+                                            <div class="right-women-thumb">
+                                                <img src="assets/images/banner/11.png" alt="">
+                                            </div>
+                
+                                            <!-- content -->
+                                            <div class="right-women-content">
+                                                <div class="right-title-price d-flex justify-content-between">
+                                                    <h2>Cotton jacket</h2>
+                                                    <span><strong>$230.00</strong></span>
+                                                </div>
+                
+                                                <div class="right-title-review-x-price d-flex justify-content-between">
+                                                    <ul>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                    </ul>
+                                                    <span><del>$300.00</del></span>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                                
+        
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- man's fashions -->
+    <section class="big-featured-section">
+        <div class="container">
+            <div class="row no-gutters">
+
+                <!-- left -->
+                <div class="col-md-6">
+                    <div class="left-womon-fashion-wrapper">
+                        
+                        <!-- title -->
+                        <div class="left-womon-fashion-title">
+                            <h2>#FOR <br><span>MAN'S</span></h2>
+                        </div>
+                        
+                        <div class="left-women-big-thumb">
+                            <a href="#">
+                                <img src="assets/images/banner/ss.jpg" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- right -->
+                <div class="col-md-6">
+
+                    <div class="right-items-section-wrapper">
+
+                        <!-- navbar -->
+                        <ul class="nav nav-pills mb-3 tabs-ul" id="pills-tab" role="tablist">
+                            <li class="nav-item nav-menu-li">
+                            <a class="nav-link active" id="pills-contact-tab" data-toggle="pill" href="#pills-shirt" role="tab" aria-controls="pills-shirt" aria-selected="true">Man's Shirt</a>
+                            </li>
+                            <li class="nav-item nav-menu-li">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-shoes" role="tab" aria-controls="pills-shoes" aria-selected="false">Shoes</a>
+                            </li>
+                            <li class="nav-item nav-menu-li">
+                            <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-watch" role="tab" aria-controls="pills-watch" aria-selected="false">Watch</a>
+                            </li>
+                            
+                            <li class="nav-item nav-menu-li">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-panjabi" role="tab" aria-controls="pills-panjabi" aria-selected="false">Panjabi</a>
+                            </li>
+
+                            <li class="nav-item nav-menu-li">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-pant" role="tab" aria-controls="pills-pant" aria-selected="false">Pant</a>
+                            </li>
+
+                            <li class="nav-item nav-menu-li">
+                                <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-hoodie" role="tab" aria-controls="pills-hoodie" aria-selected="false">Hoodies</a>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+
+                            <!-- first tabs -->
+                            <div class="tab-pane fade show active" id="pills-shirt" role="tabpanel" aria-labelledby="pills-shirt-tab">
+                                <div class="right-womon-item-wrapper">
+
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/japani.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/g.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/5.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/11.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                </div>
+                            </div>
+
+                            <!-- second tabs -->
+                            <div class="tab-pane fade" id="pills-shoes" role="tabpanel" aria-labelledby="pills-shoes-tab">
+                                <div class="right-womon-item-wrapper">
+
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/japani.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/g.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/5.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/11.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                </div>
+                            </div>
+
+                            <!-- third tabs -->
+                            <div class="tab-pane fade" id="pills-watch" role="tabpanel" aria-labelledby="pills-watch-tab">
+                                <div class="right-womon-item-wrapper">
+
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/japani.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/g.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/5.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/11.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                </div>
+                            </div>
+
+                            <!-- fourth tabs -->
+                            <div class="tab-pane fade" id="pills-panjabi" role="tabpanel" aria-labelledby="pills-panjabi-tab">
+                                <div class="right-womon-item-wrapper">
+
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/japani.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/g.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/5.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/11.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                </div>
+                            </div>
+                            
+                            <!-- five tabs -->
+                            <div class="tab-pane fade" id="pills-pant" role="tabpanel" aria-labelledby="pills-pant-tab">
+                                <div class="right-womon-item-wrapper">
+
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/japani.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/g.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/5.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/11.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                </div>
+                            </div>
+
+                            <!-- six tabs -->
+                            <div class="tab-pane fade" id="pills-hoodie" role="tabpanel" aria-labelledby="pills-hoodie-tab">
+                                <div class="right-womon-item-wrapper">
+
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/japani.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/g.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/5.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                    <!-- item -->
+                                    
+                                        <div class="right-womon-item">
+                                            <a href="#">
+                                                <div class="right-women-thumb">
+                                                    <img src="assets/images/banner/11.png" alt="">
+                                                </div>
+                    
+                                                <!-- content -->
+                                                <div class="right-women-content">
+                                                    <div class="right-title-price d-flex justify-content-between">
+                                                        <h2>Cotton jacket</h2>
+                                                        <span><strong>$230.00</strong></span>
+                                                    </div>
+                    
+                                                    <div class="right-title-review-x-price d-flex justify-content-between">
+                                                        <ul>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                                            <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                                        </ul>
+                                                        <span><del>$300.00</del></span>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    
+            
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- modal popup -->    
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <!-- header -->
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Cotton jacket</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <!-- body area -->
+            <div class="modal-body">
+                <div class="main-product-details-wrapper">
+                    <img src="assets/images/banner/g.png" alt="">
+                </div>
+            </div>
+
+            <!-- footer -->
+            <div class="modal-footer">
+                <button type="button" class="modal-btn">Add To Cart</button>
+                <button type="button" class="modal-btn green">Buy Now</button>
+            </div>
+
+        </div>
+        </div>
+    </div>
+
+
+    <!-- tranding products -->
+    <section>
+        <div class="container">
+
+            <!-- title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tranding-title">
+                        <h3>Best Selling products in the week</h3>
+                        <h2>tranding products</h2>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-11 mx-auto">
+                    <div class="tranding-product-wrapper">
+
+                        <!-- item -->
+                        <div class="tranding-product-item">
+
+                            <!-- thumb -->
+                            <div class="tranding-product-thumb">
+                                <a href="#">
+                                    <img src="assets/images/banner/g.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="traning-icons">
+                                <div class="button_container">
+                                    <button class="mordern-btn"><span>Add To Cart</span></button>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-heart"></i></li>
+                                    <li data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-eye"></i></li>
+                                    <li><i class="fas fa-search"></i></li>
+                                </ul>
+                            </div>
+
+                            <!-- content -->
+                            <div class="tranding-content">
+                                <div class="tranding-title-price d-flex justify-content-between">
+                                    <a href="#">
+                                        <h2>Cotton jacket</h2>
+                                    </a>
+                                    <span><strong>$230.00</strong></span>
+                                </div>
+
+                                <div class="tranding-title-review-x-price d-flex justify-content-between">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                    </ul>
+                                    <span><del>$300.00</del></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="tranding-product-item">
+
+                            <!-- thumb -->
+                            <div class="tranding-product-thumb">
+                                <a href="#">
+                                    <img src="assets/images/banner/g.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="traning-icons">
+                                <div class="button_container">
+                                    <button class="mordern-btn"><span>Add To Cart</span></button>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-heart"></i></li>
+                                    <li data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-eye"></i></li>
+                                    <li><i class="fas fa-search"></i></li>
+                                </ul>
+                            </div>
+
+                            <!-- content -->
+                            <div class="tranding-content">
+                                <div class="tranding-title-price d-flex justify-content-between">
+                                    <a href="#">
+                                        <h2>Cotton jacket</h2>
+                                    </a>
+                                    <span><strong>$230.00</strong></span>
+                                </div>
+
+                                <div class="tranding-title-review-x-price d-flex justify-content-between">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                    </ul>
+                                    <span><del>$300.00</del></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="tranding-product-item">
+
+                            <!-- thumb -->
+                            <div class="tranding-product-thumb">
+                                <a href="#">
+                                    <img src="assets/images/banner/g.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="traning-icons">
+                                <div class="button_container">
+                                    <button class="mordern-btn"><span>Add To Cart</span></button>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-heart"></i></li>
+                                    <li data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-eye"></i></li>
+                                    <li><i class="fas fa-search"></i></li>
+                                </ul>
+                            </div>
+
+                            <!-- content -->
+                            <div class="tranding-content">
+                                <div class="tranding-title-price d-flex justify-content-between">
+                                    <a href="#">
+                                        <h2>Cotton jacket</h2>
+                                    </a>
+                                    <span><strong>$230.00</strong></span>
+                                </div>
+
+                                <div class="tranding-title-review-x-price d-flex justify-content-between">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                    </ul>
+                                    <span><del>$300.00</del></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- item -->
+                        <div class="tranding-product-item">
+
+                            <!-- thumb -->
+                            <div class="tranding-product-thumb">
+                                <a href="#">
+                                    <img src="assets/images/banner/g.png" alt="">
+                                </a>
+                            </div>
+
+                            <!-- icon -->
+                            <div class="traning-icons">
+                                <div class="button_container">
+                                    <button class="mordern-btn"><span>Add To Cart</span></button>
+                                </div>
+                                <ul>
+                                    <li><i class="fas fa-heart"></i></li>
+                                    <li data-toggle="modal" data-target="#exampleModalCenter"><i class="fas fa-eye"></i></li>
+                                    <li><i class="fas fa-search"></i></li>
+                                </ul>
+                            </div>
+
+                            <!-- content -->
+                            <div class="tranding-content">
+                                <div class="tranding-title-price d-flex justify-content-between">
+                                    <a href="#">
+                                        <h2>Cotton jacket</h2>
+                                    </a>
+                                    <span><strong>$230.00</strong></span>
+                                </div>
+
+                                <div class="tranding-title-review-x-price d-flex justify-content-between">
+                                    <ul>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star"></i></a></li>
+                                        <li><a href="#"><i class="fas fa-star-half"></i></a></li>
+                                    </ul>
+                                    <span><del>$300.00</del></span>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- big summer collection -->
+    <section class="big-summer-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <div class="big-summer-collection-wrapper text-center wow animate__animated animate__slideInUp">
+                        <h3 class="">summer collection</h3>
+                        <h2>have a nice sale</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat labore quasi dicta sint non expedita minus reprehenderit odit. Alias, odit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- shipping trams -->
+    <section class="shipping-container">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="shipping-box wow animate__animated animate__slideInUp animate__faster">
+                        <i class="fab fa-telegram"></i>
+                        <h2 class="">Free shipping and returns</h2>
+                        <p>all order over $400</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shipping-box wow animate__animated animate__slideInUp animate__fast">
+                        <i class="fas fa-certificate"></i>
+                        <h2>money back</h2>
+                        <p>100% money back 30-days</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shipping-box wow animate__animated animate__slideInUp animate__slow">
+                        <i class="fas fa-phone"></i>
+                        <h2>support online 24/7</h2>
+                        <p>all order over $400</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="shipping-box wow animate__animated animate__slideInUp animate__slower">
+                        <i class="fas fa-lock"></i>
+                        <h2>secure payments</h2>
+                        <p>all order over $400</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- testimonial -->
+    <section class="testimonial-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+
+                    <div class="main-testi-wrapper">
+                        <div class="testimonial-title">
+                            <div class="top-underline"></div>
+                            <h2>Our Client Testimonial</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi enim eius modi reprehenderit asperiores molestias? Est, rerum adipisci! Commodi corporis minus earum, nesciunt illum cum ut ab unde suscipit impedit.</p>
+                        </div>
+    
+                        <div class="swiper-container testimonial-slider">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide">
+                                    <div class="testi-box">
+                                        <div class="testi-thumb">
+                                            <img src="assets/images/banner/author.jpg" alt="">
+                                        </div>
+    
+                                        <span class="intro-banner-vdo-play-btn pinkBg newstricker-glow">
+                                            <span class="ripple pinkBg"></span>
+                                            <span class="ripple pinkBg"></span>
+                                            <span class="ripple pinkBg"></span>
+                                        </span>
+    
+                                        <div class="testi-content">
+                                            <h2>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis nihil facilis alias, pariatur tempore ipsum!</h2>
+                                            <h6>Daniel Mathew</h6>
+                                            <p>Founder & CEO - MicroSoft</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- from our blog -->
+    <section class="our-blog-section">
+        <div class="container">
+
+            <!-- title -->
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tranding-title">
+                        <h3>Fresh From Our Blog</h3>
+                        <h2>Our Latest Blog</h2>
+                        <div class="underline"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+
+                <!-- item -->
+                <div class="col-md-4">
+                    <div class="our-blog-item">
+                        <div class="our-blog-thumb">
+                            <img src="assets/images/banner/f.jpg" class="img-fluid" alt="">
+                            <div class="blog-cat">
+                                <p>Fashion</p>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="main-blog-contnet-wrapper">
+                            <div class="our-blog-content">
+                                <a href="blog.html"><h3>10 Hot Trands In Spring</h3></a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fuga itaque molestias aspernatur. Similique, illo.</p>
+                            </div>
+
+                            <!-- excerpt -->
+                            <div class="our-blog-excerpt d-flex justify-content-between align-items-center">
+                                <p><i>February 19, 2021</i></p>
+                                <div class="blog-author d-flex justify-content-between align-items-center">
+                                    <img src="assets/images/banner/author.jpg" alt="">
+                                    <p>By Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-md-4">
+                    <div class="our-blog-item">
+                        <div class="our-blog-thumb">
+                            <img src="assets/images/banner/man-fashion.jpg" class="img-fluid" alt="">
+                            <div class="blog-cat">
+                                <p>Fashion</p>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="main-blog-contnet-wrapper">
+                            <div class="our-blog-content">
+                                <a href="blog.html"><h3>10 Hot Trands In Spring</h3></a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fuga itaque molestias aspernatur. Similique, illo.</p>
+                            </div>
+
+                            <!-- excerpt -->
+                            <div class="our-blog-excerpt d-flex justify-content-between align-items-center">
+                                <p><i>February 19, 2021</i></p>
+                                <div class="blog-author d-flex justify-content-between align-items-center">
+                                    <img src="assets/images/banner/author.jpg" alt="">
+                                    <p>By Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- item -->
+                <div class="col-md-4">
+                    <div class="our-blog-item">
+                        <div class="our-blog-thumb">
+                            <img src="assets/images/banner/wom.jpg" class="img-fluid" alt="">
+                            <div class="blog-cat">
+                                <p>Fashion</p>
+                            </div>
+                        </div>
+
+                        <!-- content -->
+                        <div class="main-blog-contnet-wrapper">
+                            <div class="our-blog-content">
+                                <a href="blog.html"><h3>10 Hot Trands In Spring</h3></a>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro fuga itaque molestias aspernatur. Similique, illo.</p>
+                            </div>
+
+                            <!-- excerpt -->
+                            <div class="our-blog-excerpt d-flex justify-content-between align-items-center">
+                                <p><i>February 19, 2021</i></p>
+                                <div class="blog-author d-flex justify-content-between align-items-center">
+                                    <img src="assets/images/banner/author.jpg" alt="">
+                                    <p>By Admin</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="new-newsletter-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-newsletter-wrapper">
+                        <div class="newsletter-title">
+                            <h2>Subscribe our Newsletter</h2>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam accusantium iure quidem consectetur, illum natus eius hic asperiores vitae nobis?</p>
+                        </div>
+                        
+                        <!-- main wrapper -->
+                        <section class="newsletter-section">
+
+                            <div class="input-wrapper">
+                                <label for="newsletter" class="label-text">Enter your Email to Join</label>
+                                <input type="text" id="newsletter">
+
+                                <button class="btn arrow-btn">
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                    </svg>
+                                </button>
+
+                            </div>
+
+                        </section>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+
+
+<footer>
+
+    <div class="ClickTop">
+        <i class="fa fa-chevron-up" aria-hidden="true"></i>
+    </div>
+
+    <!-- main footer section -->
+    <section class="footer-menu-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-menu-wrapper">
+
+                        <!-- logo -->
+                        <div class="footer-logo-area">
+                            <div class="footer-thumb">
+                                <a href="index.html"><img src="assets/images/logo.png" alt=""></a>
+                            </div>
+                            <p>Condimentum adipiscing vel neque dis nam parturient orci at scelerisque neque dis nam parturient.</p>
+
+                            <li><i class="fa fa-map-marker" aria-hidden="true"></i> 451 Wall Street, UK, London</li>
+                            <li><i class="fa fa-mobile" aria-hidden="true"></i> Phone: (064) 332-1233</li>
+                            <li><i class="fa fa-fax" aria-hidden="true"></i> Fax: (099) 453-1357</li>
+                        </div>
+
+                        <!-- RECENT POSTS -->
+                        <div class="footer-recent-post">
+
+                            <!-- item -->
+                            <div class="footer-recent-post-box">
+                                <div class="footer-recent-thumb">
+                                    <img src="assets/images/Bag/3.png" alt="">
+                                </div>
+                                <div class="footer-recent-content">
+                                    <h4>A companion for extra sleeping</h4>
+                                    <p>July 23, 2016 <span> &nbsp; 1 Comment</span></p>
+                                </div>
+                            </div>
+                            <!-- item -->
+                            <div class="footer-recent-post-box">
+                                <div class="footer-recent-thumb">
+                                    <img src="assets/images/Cosmetics/2.jpg" alt="">
+                                </div>
+                                <div class="footer-recent-content">
+                                    <h4>A companion for extra sleeping</h4>
+                                    <p>July 23, 2016 <span>1 Comment</span></p>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- OUR STORES -->
+                        <div class="footer-our-store">
+                            <ul>
+                                <li class="footer-item-title">OUR STORES</li>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">London SF</a></li>
+                                <li><a href="#">Cockfosters BP</a></li>
+                                <li><a href="#">Los Angeles</a></li>
+                                <li><a href="#">Chicago</a></li>
+                                <li><a href="#">Las Vegas</a></li>
+                            </ul>
+                        </div>
+                        
+                        <!-- USEFUL LINKS -->
+                        <div class="footer-our-store">
+                            <ul>
+                                <li class="footer-item-title">USEFUL LINKS</li>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">London SF</a></li>
+                                <li><a href="#">Cockfosters BP</a></li>
+                                <li><a href="#">Los Angeles</a></li>
+                                <li><a href="#">Chicago</a></li>
+                                <li><a href="#">Las Vegas</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- FOOTER MENU -->
+                        <div class="footer-our-store">
+                            <ul>
+                                <li class="footer-item-title">FOOTER MENU</li>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">London SF</a></li>
+                                <li><a href="#">Cockfosters BP</a></li>
+                                <li><a href="#">Los Angeles</a></li>
+                                <li><a href="#">Chicago</a></li>
+                                <li><a href="#">Las Vegas</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- bottom footer -->
+    <section class="footer-bottom-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="footer-bottom-wrapper flex">
+                        <div class="footer-bottom-box">
+                            @ Copyright 2020 all right reserved - Navieasoft ltd.
+                        </div>
+                        <div class="footer-bottom-box">
+                           <img src="assets/images/woomart/payments.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</footer>
+
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/borhan.js"></script>
+
+</body>
+</html>
